@@ -48,7 +48,7 @@ namespace SharpDX.Direct3D10
         {
             device.CreateShaderResourceView(resource, description, this);
         }
-#if !WIN8METRO
+#if !DIRECTX11_1
         /// <summary>	
         /// Create a shader-resource view from a file. Read the characteristics of a texture when the texture is loaded.
         /// </summary>	
@@ -149,5 +149,5 @@ namespace SharpDX.Direct3D10
             return FromMemory(device, memory, loadInformation);
         }
 #endif
-   }
+    }
 }
