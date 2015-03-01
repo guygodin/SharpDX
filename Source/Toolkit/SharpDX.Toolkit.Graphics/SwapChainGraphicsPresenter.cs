@@ -41,7 +41,7 @@ namespace SharpDX.Toolkit.Graphics
         private RenderTarget2D backBuffer;
 
         private SwapChain swapChain;
-#if DIRECTX11_2
+#if DIRECTX11_2 && WIN8METRO
         private SwapChain2 swapChain2;
 #endif
 
